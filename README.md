@@ -51,7 +51,7 @@ Explore the app's trading flow (search, buy/sell, portfolio updates)
 
 Develop and test locally without worrying about rate limits or API failures
 
-✅ How to Enable Real API Integration
+How to Enable Real API Integration
 To use real-time stock price data, follow these steps:
 
 Sign up for a stock API provider (e.g. FinancialModelingPrep, Twelve Data, or Alpha Vantage).
@@ -60,24 +60,19 @@ Obtain your API key.
 
 In SimpleTrader.WPF/appsettings.json, update the following:
 
-json
-Copy
-Edit
+
 {
   "FINANCE_API_KEY": "YOUR_ACTUAL_API_KEY"
 }
 In the SimpleTrader.WPF/HostBuilders/AddServicesHostBuilderExtension.cs (or equivalent service registration file), replace the mock service registration:
 
-csharp
-Copy
-Edit
+
 // Comment this line
 services.AddSingleton<IStockPriceService, MockStockPriceProvider>();
 
-// And uncomment or add this line instead
+// And uncomment this line
 services.AddSingleton<IStockPriceService, StockPriceProvider>();
 Now the application will retrieve live stock prices via HTTP instead of using simulated mock data.
 
-💡 You can also implement a config switch (e.g. via a boolean in appsettings.json) to toggle between mock and real data dynamically — great for development vs production.
 
 
