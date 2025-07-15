@@ -42,7 +42,7 @@ After launching the application, users can:
 - **Buy/Sell assets**: Execute trades and update your portfolio.
 - **Login/Register**: Manage account information securely.
 
-#Mock Data Support (New Feature)
+##Mock Data Support (New Feature)
 By default, this project uses a mock stock price provider so that users can run the app without signing up for a third-party API key.
 
 This allows you to:
