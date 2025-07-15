@@ -47,18 +47,18 @@ By default, this project uses a mock stock price provider so that users can run 
 
 This allows you to:
 
-**Explore the app's trading flow (search, buy/sell, portfolio updates)
+- **Explore the app's trading flow (search, buy/sell, portfolio updates)
 
-**Develop and test locally without worrying about rate limits or API failures
+- **evelop and test locally without worrying about rate limits or API failures
 
 # How to Enable Real API Integration
 To use real-time stock price data, follow these steps:
 
-**Sign up for a stock API provider (e.g. FinancialModelingPrep, Twelve Data, or Alpha Vantage).
+- **Sign up for a stock API provider (e.g. FinancialModelingPrep, Twelve Data, or Alpha Vantage).
 
-**Obtain your API key.
+- **Obtain your API key.
 
-**In SimpleTrader.WPF/appsettings.json, update the following:
+- **In SimpleTrader.WPF/appsettings.json, update the following:
 
 
 {
