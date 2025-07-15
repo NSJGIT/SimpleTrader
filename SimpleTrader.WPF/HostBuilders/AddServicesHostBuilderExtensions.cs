@@ -30,7 +30,8 @@ namespace SimpleTrader.WPF.HostBuilders
                 // Register the ICommonRepository<Account> and AccountRepository like Singleton service
                 services.AddSingleton<IAuthenticationServices, AuthentificationProvider>();
                 // Register IStockPriceService and StockPriceProvider like Singleton service
-                services.AddSingleton<IStockPriceService, StockPriceProvider>();
+                //services.AddSingleton<IStockPriceService, StockPriceProvider>();
+                services.AddSingleton<IStockPriceService, MockStockPriceProvider>(); //Mock implementation for testing/demo purposes
                 // Register IBuyStockService and BuyStockProvider like Singleton service
                 services.AddSingleton<IBuyStockService, BuyStockProvider>();
                 // Register the IMajorIndexService and MajorIndexProvider like Singleton service
